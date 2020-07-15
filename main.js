@@ -3,11 +3,11 @@
   
     // Shortcut to get elements
     var el = function(element) {
-      if (element.charAt(0) === "#") { // If passed an ID...
-        return document.querySelector(element); // ... returns single element
+      if (element.charAt(0) === "#") { 
+        return document.querySelector(element); 
       }
   
-      return document.querySelectorAll(element); // Otherwise, returns a nodelist
+      return document.querySelectorAll(element); 
     };
   
     // Variables
@@ -77,9 +77,7 @@
         if (isNaN(resultNum)) { // If result is not a number; set off by, eg, double-clicking operators
           resultNum = "You broke it!";
         } else { // If result is infinity, set off by dividing by zero
-          resultNum = "Look at what you've done";
-          el('#calculator').classList.add("broken"); // Break calculator
-          el('#reset').classList.add("show"); // And show reset button
+          resultNum = "Impossible !";
         }
       }
   
