@@ -5,3 +5,14 @@ services:
         build: .
         ports:
             - 8030:80
+    node:
+        image: 'node:latest'
+        working_dir: /home/node/app
+        command:
+            - /bin/sh
+            - '-c'
+            - 'npm install --only=dev && npm test'
+        ports:
+            - '3000:3000'
+        volumes:
+            - './:/home/node/app'

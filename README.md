@@ -1,2 +1,2 @@
 # calculator
-Projet IPSSI Docker + Calculatrice JS
+Projet IPSSI Docker + Calculatrice JS + Tests
